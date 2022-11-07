@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="shortcut icon" href="/assets/images/favicon (1).ico" type="image/x-icon">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <title>Recads</title>
+    </head>
+    <body class="vh-100 d-flex align-items-center">
+        <div class="container col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="blueBg">
+                <div class="box signin">
+                    <h2>Already Have an Account ?</h2>
+                    <button class="singninBtn">Sign in</button>
+                </div>
+                <div class="box signup">
+                    <h2>Dont't Have an Account ?</h2>
+                    <button class="singnupBtn">Sign up</button>
+                </div>
+            </div>
+            <div class="formBx">
+                <div class="form signinForm">
+                    <form >
+                        <h3>Sign in</h3>
+                        <input type="text" placeholder="Username" id="email">
+                        <input type="password" placeholder="Password" id="password">
+                        <!-- <input onclick="logar()" type="submit" value="Login" class="btn button-login"> -->
+                        <button onclick="loginFunc(event)" id="login" class="btn">Login</button>
+                    </form>
+                </div>
+
+                <div class="form signupForm">
+                    <form >
+                        <h3>Sign in</h3>
+                        <!-- <input type="text" placeholder="Username"> -->
+                        <input id="email-create-input" type="text" placeholder="Email Address">
+                        <input id="password-create-input" type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <!-- <input type="submit" value="Register"> -->
+                        <button id="login2" class="btn2" onclick="signup(event)">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/login.js"></script>
+        <script src="/assets/js/index.js"></script>
+    </body>
+</html>
